@@ -10,7 +10,7 @@ export default function Featured({ type, setGenre, lists }) {
     const getRandomContent = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8800/api/movies/random?type=${type}`,
+          `https://zjnu.herokuapp.com/api/movies/random?type=${type}`,
           {
             headers: {
               token:

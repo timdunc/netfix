@@ -13,7 +13,7 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8800/api/lists${type ? "?type=" + type : ""}${
+          `https://zjnu.herokuapp.com/api/lists${type ? "?type=" + type : ""}${
             genre ? "&genre=" + genre : ""
           }`,
           {

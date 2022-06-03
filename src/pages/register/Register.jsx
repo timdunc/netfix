@@ -23,7 +23,7 @@ export default function Register() {
     setPassword(passwordRef.current.value);
     setUsername(usernameRef.current.value);
     try {
-      await axios.post("http://localhost:8800/api/auth/register", {
+      await axios.post("https://zjnu.herokuapp.com/api/auth/register", {
         email,
         username,
         password,
